@@ -1,7 +1,7 @@
 # Basic
 title: learning17
-subtitle: blogs
-description: welcome
+subtitle: Blog
+description: Welcome
 # 头像里面的标题
 avatarTitle: learning17
 # 头像里面的描述
@@ -38,18 +38,17 @@ cover_color: clear
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客主页
+    title: Home
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
+    - {title: Articles, description: archive, url: '/archive'}   
+    - {title: Tags, description: tags, url: '/tags'}      
+    - {title: About, description: about, url: '/about'}      
     
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
 paginate: 10
 paginate_path: "page/:num/"
-
 

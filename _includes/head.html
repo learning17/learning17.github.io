@@ -64,29 +64,32 @@
   });
 </script>
 
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-		tex2jax: {
-			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-		}
-	});
-	
-	MathJax.Hub.Queue(function() {
-		var all = MathJax.Hub.getAllJax(), i;
-		for(i=0; i < all.length; i += 1) {
-			all[i].SourceElement().parentNode.className += ' has-jax';
-		}
-    });
- </script>
- 
-<script type="text/javascript" 
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> 
-</script>
+<!-- MathJax Support -->
+   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+   <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       Tex: {
+         equationNumbers: {
+           autoNumber: "AMS"
+         }
+       },
+       tex2jax: {
+         inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+         displayMath: [ ['$$','$$'], ['\[','\]'] ],
+         processEscapes: true,
+       },
+       "HTML-CSS": {
+         preferredFont: "STIX",
+         scale: 100,
+         styles: {
+           ".MathJax_Display": { "text-align": "center", margin: "0em 0em" },
+           ".mi": { "color": "#4d4d4d" },
+           ".mo": { "color": "#4d4d4d" }
+         }
+       }
+     });
+   </script>
+<!-- End MathJax Support -->
 
-<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	TeX: { equationNumbers: { autoNumber: "AMS" } }
-	});
-</script>
 
 </head>

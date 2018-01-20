@@ -53,4 +53,6 @@ paginate: 10
 paginate_path: "page/:num/"
 
 markdown: kramdown
+kramdown:
+  input:  GFM
 

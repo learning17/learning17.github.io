@@ -1,7 +1,7 @@
 # Basic
 title: learning17
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+subtitle: blogs
+description: welcome
 # 头像里面的标题
 avatarTitle: learning17
 # 头像里面的描述
@@ -49,7 +49,7 @@ nav:
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
-paginate: 20
+paginate: 10
 paginate_path: "page/:num/"
 
 

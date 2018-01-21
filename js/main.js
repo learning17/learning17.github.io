@@ -7,12 +7,14 @@ $(document).ready(function() {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
-    if (currentWidth < 2000) {
+    $('.panel-cover').addClass('panel-cover--collapsed');
+
+    /*if (currentWidth < 2000) {
       $('.panel-cover').addClass('panel-cover--collapsed');
     } else {
       $('.panel-cover').css('max-width',currentWidth);
       $('.panel-cover').animate({'max-width': '320px', 'width': '22%'}, 400, swing = 'swing', function() {} );
-    }
+    }*/
 
     
   });

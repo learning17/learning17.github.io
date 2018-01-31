@@ -44,30 +44,15 @@
   </script>
   {% endif %}
 
+
 <!-- MathJax Support -->
    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
-   <script type="text/x-mathjax-config">
+   <script type="text/x-mathjax-config;executed=true">
      MathJax.Hub.Config({
-       Tex: {
-         equationNumbers: {
-           autoNumber: "AMS"
-         }
-       },
-       tex2jax: {
-         inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-         displayMath: [ ['$$','$$'], ['\[','\]'] ],
-         processEscapes: true,
-       },
-       "HTML-CSS": {
-         preferredFont: "STIX",
-         scale: 100,
-         styles: {
-           ".MathJax_Display": { "text-align": "center", margin: "0em 0em" },
-           ".mi": { "color": "#4d4d4d" },
-           ".mo": { "color": "#4d4d4d" }
-         }
-       }
-     });
+       showProcessingMessages: false,
+       tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] },
+       TeX: { equationNumbers: {autoNumber: "AMS"} }
+     })
    </script>
 <!-- End MathJax Support -->
 

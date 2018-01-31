@@ -74,8 +74,9 @@
          }
        },
        tex2jax: {
-         inlineMath: [ ['$','$'] ],
-         displayMath: [ ['$$','$$'] ],
+         inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+         displayMath: [ ['$$','$$'], ['\[','\]'] ],
+         processEscapes: true,
        },
        "HTML-CSS": {
          preferredFont: "STIX",
